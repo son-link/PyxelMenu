@@ -8,6 +8,8 @@ You can define the options, text and cursor colors, number of options to display
 
 This project is still under development, so there may be changes in the initializer, as well as in the methods, etc.
 
+[Documentation](https://son-link.github.io/PyxelMenu/)
+
 ## Example:
 
 ![PyxelMenu in action](in_action.gif)
