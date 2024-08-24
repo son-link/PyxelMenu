@@ -10,7 +10,7 @@ This project is still under development, so there may be changes in the initiali
 
 ## Example:
 
-![PyxelMenu in action](in_action.gif)
+![PyxelMnu in action](in_action.gif)
 
 Under MIT license
 

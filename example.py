@@ -11,7 +11,9 @@ class Example:
         for i in range(1, 21):
             menu_options.append(f'Option {i}')
 
-        self.menu = PyxelMenu(options=menu_options, x=8, y=8, color=9, limit=10, cursor_color=3)
+        self.menu = PyxelMenu(menu_options, 8, 8, 10)
+        self.menu.set_text_color(9)
+        self.menu.set_cursor(8, '->')
 
         pyxel.init(166, 120, title='PyxelMenu Example', display_scale=3,
             capture_scale=3, capture_sec=20)
@@ -32,8 +34,8 @@ class Example:
         pyxel.cls(0)
         self.menu.draw()
         pyxel.text(64, 8, 'Press enter:', 7)
-        pyxel.text(64, 16, f'Position {self.current_pos}', 2)
-        pyxel.text(64, 22, f'Text:    {self.current_text}', 2)
+        pyxel.text(64, 16, f'Position: {self.current_pos}', 2)
+        pyxel.text(64, 22, f'Text:     {self.current_text}', 2)
 
 
 if __name__ == '__main__':

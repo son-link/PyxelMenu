@@ -1,0 +1,13 @@
+site_name: PyxelMenu
+plugins:
+  - mkdocstrings:
+      default_handler: python
+
+nav:
+  - Home: index.md
+  - PyxelMenu Docs: pyxel_menu.md
+  - Code: https://github.com/son-link/PyxelMenu
+
+theme:
+  name: terminal
+  palette: sans_dark
