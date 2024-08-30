@@ -1,9 +1,26 @@
 # Changelog
 
-## [0.1.1] - 2024-08-24
+## [0.2.0] - 2024-08-29
 
 ### Added
 
+- 4 new setters:
+	- set_cursor_img: Set an image from the image bank as the cursor.
+	- set_cursor_pos: Set cursor position.
+	- set_highlight_color: Sets the highlight color for the indicated option.
+	- set_options: Set the options for the menu
+- 6 examples
+- A script to generate the HTML files of the examples and add them to the documentation web site.
+
+### Changed
+
+- The use of characters as cursor has been replaced by the use of three geometric shapes: circle, triangle and square.
+- The constructor's options parameter is now optional and becomes the third parameter.
+- Better documentation with examples.
+
+## [0.1.1] - 2024-08-24
+
+### Added
 
 - Added two news setters methods:
 	- set_text_color: Set the color of the options. Defaults: 7

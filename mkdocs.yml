@@ -7,6 +7,13 @@ nav:
   - Home: index.md
   - PyxelMenu Docs: pyxel_menu.md
   - Code: https://github.com/son-link/PyxelMenu
+  - Examples:
+    - '001: Default': examples/001-default.md
+    - '002: Colors': examples/002-colors.md
+    - '003: Cursor': examples/003-cursor.md
+    - '004: Image as cursor': examples/004-cursor-img.md
+    - '005: Highlight': examples/005-highlight.md
+    - '006: Submenu': examples/006-submenu.md
 
 theme:
   name: terminal

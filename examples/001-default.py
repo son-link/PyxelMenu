@@ -1,3 +1,5 @@
+# Example with default options
+
 import pyxel
 from pyxel_menu import PyxelMenu
 
@@ -11,29 +13,34 @@ class Example:
         for i in range(1, 21):
             menu_options.append(f'Option {i}')
 
-        self.menu = PyxelMenu(menu_options, 8, 8, 10)
-        self.menu.set_text_color(9)
-        self.menu.set_cursor(8, '->')
+        self.menu = PyxelMenu(8, 8, menu_options)
 
-        pyxel.init(166, 120, title='PyxelMenu Example', display_scale=3,
-            capture_scale=3, capture_sec=20)
+        pyxel.init(166, 120, title='PyxelMenu Example 001: Default', display_scale=3)
 
         pyxel.run(self.update, self.draw)
 
     def update(self):
-        if pyxel.btnp(pyxel.KEY_UP):
+        if (
+            pyxel.btnp(pyxel.KEY_UP) or
+            pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_UP)
+        ):
             self.menu.move_up()
-        elif pyxel.btnp(pyxel.KEY_DOWN):
+        elif (
+            pyxel.btnp(pyxel.KEY_DOWN) or
+            pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN)
+        ):
             self.menu.move_down()
-
-        if pyxel.btnp(pyxel.KEY_RETURN):
+        elif (
+            pyxel.btnp(pyxel.KEY_RETURN) or
+            pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_A)
+        ):
             self.current_pos = self.menu.get_current_pos()
             self.current_text = self.menu.get_current_text()
 
     def draw(self):
         pyxel.cls(0)
         self.menu.draw()
-        pyxel.text(64, 8, 'Press enter:', 7)
+        pyxel.text(64, 8, 'Press enter or A button:', 7)
         pyxel.text(64, 16, f'Position: {self.current_pos}', 2)
         pyxel.text(64, 22, f'Text:     {self.current_text}', 2)
 
