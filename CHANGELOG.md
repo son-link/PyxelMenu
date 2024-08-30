@@ -40,14 +40,5 @@
 
 - First release
 
-[1.3.0]: https://github.com/son-link/PQMusic/compare/v.1.2.1...v.1.3.0
-[1.2.1]: https://github.com/son-link/PQMusic/compare/v.1.2.0...v.1.2.1
-[1.2.0]: https://github.com/son-link/PQMusic/compare/v.1.1.1...v.1.2.0
-[1.1.1]: https://github.com/son-link/PQMusic/compare/v.1.1.0...v.1.1.1
-[1.1.0]: https://github.com/son-link/PQMusic/compare/v.1.0.0...v.1.1.0
-[1.0.0]: https://github.com/son-link/PQMusic/compare/v.0.3.3...v.1.0.0
-[0.3.3]: https://github.com/son-link/PQMusic/compare/v.0.3.2...v.0.3.3
-[0.3.2]: https://github.com/son-link/PQMusic/compare/v.0.3.1...v.0.3.2
-[0.3.1]: https://github.com/son-link/PQMusic/compare/v.0.3.0...v.0.3.1
-[0.3.0]: https://github.com/son-link/PQMusic/compare/v.0.2.0...v.0.3.0
-[0.2.0]: https://github.com/son-link/PQMusic/compare/v.0.1.0...v.0.2.0
+[0.2.0]:  https://github.com/son-link/PyxelMenu/compare/v0.1.1...v0.2.0
+[0.1.1]: https://github.com/son-link/PyxelMenu/compare/v0.1.0...v0.1.1
