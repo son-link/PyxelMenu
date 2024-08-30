@@ -6,6 +6,8 @@ This example shows the use of the methods for changing cursor colors and options
 
 ![Capture](../assets/002-colors.png)
 
+<a href="/examples/play/002-colors.html" target="_black" class="btn btn-primary">Play</a>
+
 ## Code
 
 ```python

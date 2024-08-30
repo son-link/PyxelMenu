@@ -6,6 +6,8 @@ This is a basic example, using the default settings
 
 ![Capture](../assets/001-default.gif)
 
+<a href="/examples/play/001-default.html" target="_black" class="btn btn-primary">Play</a>
+
 ## Code
 
 ```python

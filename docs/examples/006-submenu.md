@@ -6,6 +6,8 @@ This is an example of how you can create several instances of PyxelMenu to creat
 
 ![Capture](../assets/006-submenu.gif)
 
+<a href="/examples/play/006-submenu.html" target="_black" class="btn btn-primary">Play</a>
+
 ## Code
 
 ```python

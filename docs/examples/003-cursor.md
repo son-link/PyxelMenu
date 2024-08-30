@@ -7,6 +7,8 @@ Use the left and right arrows, or their equivalents on a joystick, to change men
 
 ![Capture](../assets/003-cursor.gif)
 
+<a href="/examples/play/003-cursor.html" target="_black" class="btn btn-primary">Play</a>
+
 ## Code
 
 ```python

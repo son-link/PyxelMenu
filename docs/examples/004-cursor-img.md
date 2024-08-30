@@ -6,6 +6,8 @@ This example shows how to use an image from your project's image bank as a curso
 
 ![Capture](../assets/004-cursor-img.png)
 
+<a href="/examples/play/004-cursor-img.html" target="_black" class="btn btn-primary">Play</a>
+
 ## Code
 
 ```python

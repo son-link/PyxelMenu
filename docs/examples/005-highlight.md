@@ -6,6 +6,8 @@ This example shows the possibility to indicate a different color to highlight th
 
 ![Capture](../assets/005-highlight.gif)
 
+<a href="/examples/play/005-highlight.html" target="_black" class="btn btn-primary">Play</a>
+
 ## Code
 
 ```python
