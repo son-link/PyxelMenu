@@ -14,6 +14,9 @@ class PyxelMenu:
             limit (int, optional): The limit of options to display. Defaults to 5.
         """
         self._limit = limit
+        if options and len(options) < limit:
+            self._limit == len(options)
+
         self._x = x
         self._y = y
         self._current_pos = 0
@@ -45,17 +48,20 @@ class PyxelMenu:
 
         init = 0
         cursor_pos = self._current_pos
+        middle = pyxel.floor(self._limit / 2)
 
-        if self._current_pos < len(self._options):
+        if (
+            len(self._options) > self._limit and
+            self._current_pos < len(self._options)
+        ):
             if (
-                self._current_pos > pyxel.floor(self._limit / 2) and 
-                self._current_pos < len(self._options) - pyxel.floor(self._limit / 2)
+                self._current_pos > middle and
+                self._current_pos < len(self._options) - middle
             ):
-                init = self._current_pos - pyxel.floor(self._limit / 2)
-                cursor_pos = pyxel.floor(self._limit / 2)
-
+                init = self._current_pos - middle
+                cursor_pos = middle
             elif (
-                self._current_pos >= len(self._options) - pyxel.floor(self._limit / 2)
+                self._current_pos >= len(self._options) - middle
             ):
                 init = len(self._options) - self._limit
                 cursor_pos = self._current_pos - init
@@ -76,7 +82,6 @@ class PyxelMenu:
                         self._cursor_img['colkey']
                     )
                 else:
-                    # pyxel.text(self._x, starty, self._cursor, self._cursor_color)
                     if self._cursor['type'] == 'circle':
                         pyxel.circ(self._x + 5, starty + 2, 2, self._cursor['color'])
                     elif self._cursor['type'] == 'triangle':
@@ -107,17 +112,6 @@ class PyxelMenu:
         ''' Move the cursor down one position '''
         if self._current_pos < len(self._options) - 1:
             self._current_pos += 1
-
-    def set_text_color(self, color: int):
-        """Defines the color of the options
-
-        Args:
-            color (int): The color index of the Pyxel palette to use for the options (0-15)
-        """
-        if color < 0 or color > 15:
-            return
-
-        self._color = color
 
     def set_cursor(self, cursor_type: str = 'circle', color: int = 7):
         """Defines the type and/or color of the cursor to be used
@@ -155,6 +149,7 @@ class PyxelMenu:
         }
 
     def set_cursor_pos(self, pos: int):
+        ''' Set the current position of the cursor '''
         self._current_pos = pos
 
     def set_highlight_color(self, color: int):
@@ -174,3 +169,16 @@ class PyxelMenu:
             options (list): The options list
         """
         self._options = options
+        if len(self._options) < self._limit:
+            self._limit == len(options)
+
+    def set_text_color(self, color: int):
+        """Defines the color of the options
+
+        Args:
+            color (int): The color index of the Pyxel palette to use for the options (0-15)
+        """
+        if color < 0 or color > 15:
+            return
+
+        self._color = color

@@ -32,7 +32,7 @@ class Example:
             self.menu.move_down()
         elif (
             pyxel.btnp(pyxel.KEY_RETURN) or
-            pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_A)
+            pyxel.btnp(pyxel.GAMEPAD1_BUTTON_A)
         ):
             self.current_pos = self.menu.get_current_pos()
             self.current_text = self.menu.get_current_text()
