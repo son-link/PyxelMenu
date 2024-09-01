@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1] - 2024-09-01
+
+### Changed
+
+- Fixed a problem when the limit to display is greater than the number of options
+- Fixed a small bug in the example 001
+
 ## [0.2.0] - 2024-08-29
 
 ### Added
@@ -40,5 +47,6 @@
 
 - First release
 
+[0.2.1]:  https://github.com/son-link/PyxelMenu/compare/v0.2.0...v0.2.1
 [0.2.0]:  https://github.com/son-link/PyxelMenu/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/son-link/PyxelMenu/compare/v0.1.0...v0.1.1
